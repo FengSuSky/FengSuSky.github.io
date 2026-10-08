@@ -1,0 +1,56 @@
+# Minimal Mistakes — 冯溯的个人网站
+remote_theme             : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "default"
+
+locale                   : "zh-CN"
+title                    : "冯溯"
+subtitle                 : "让 AI 替人做事"
+name                     : "冯溯"
+description              : "AI 基础设施 · 交易系统 · 知识管理"
+url                      : "https://me.windtrace.top"
+baseurl                  : ""
+repository               : "FengSuSky/FengSuSky.github.io"
+
+teaser                   : /assets/images/teaser.jpg
+logo                     : /assets/images/logo.png
+
+author:
+  name    : "冯溯"
+  avatar  : /assets/images/avatar.jpg
+  bio     : "智能语音产品负责人 · 前算法工程师。让 AI 替人做事。"
+  location: "长沙"
+  github  : FengSuSky
+  email   : fs2265548@icloud.com
+
+analytics:
+  provider: false
+
+include:
+  - _pages
+
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: "\n\n"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+defaults:
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
