@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>冯溯 - 让 AI 替人做事</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Inter','Noto Sans SC',sans-serif; color:#1a1a1a; line-height:1.7; background:#fafafa; }
+        a { color:#7c3aed; text-decoration:none; }
+        a:hover { text-decoration:underline; }
+        
+        /* Sidebar */
+        .sidebar { position:fixed; left:0; top:0; bottom:0; width:280px; background:#fff; border-right:1px solid #e5e5e5; padding:40px 24px; overflow-y:auto; }
+        .avatar { width:120px; height:120px; border-radius:50%; margin:0 auto 16px; display:block; object-fit:cover; }
+        .author-name { text-align:center; font-size:20px; font-weight:700; margin-bottom:4px; }
+        .author-bio { text-align:center; font-size:13px; color:#666; margin-bottom:16px; }
+        .author-location { text-align:center; font-size:12px; color:#999; margin-bottom:20px; }
+        .nav { list-style:none; }
+        .nav li { margin-bottom:6px; }
+        .nav a { display:block; padding:8px 12px; border-radius:6px; color:#333; font-size:14px; }
+        .nav a:hover { background:#f0f0f0; text-decoration:none; }
+        .social { display:flex; gap:12px; justify-content:center; margin-top:20px; }
+        .social a { font-size:18px; }
+        
+        /* Main */
+        .main { margin-left:280px; padding:48px 48px 80px; max-width:800px; }
+        h1 { font-size:28px; margin-bottom:16px; border-bottom:2px solid #7c3aed; padding-bottom:8px; }
+        h2 { font-size:22px; margin:32px 0 12px; }
+        h3 { font-size:17px; margin:20px 0 8px; }
+        p { margin-bottom:12px; }
+        ul { padding-left:20px; margin-bottom:16px; }
+        li { margin-bottom:6px; }
+        .highlight { color:#7c3aed; font-weight:600; }
+        
+        @media(max-width:900px) {
+            .sidebar { position:static; width:100%; border-right:none; border-bottom:1px solid #e5e5e5; padding:24px; }
+            .main { margin-left:0; padding:24px 16px; }
+        }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <img src="assets/images/avatar.jpg" alt="冯溯" class="avatar">
+        <div class="author-name">冯溯</div>
+        <div class="author-bio">智能语音产品负责人 · 前算法工程师<br>让 AI 替人做事</div>
+        <div class="author-location">📍 长沙</div>
+        <nav>
+            <ul class="nav">
+                <li><a href="/">首页</a></li>
+                <li><a href="/about.html">关于</a></li>
+                <li><a href="/experience.html">经历</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="https://github.com/FengSuSky" title="GitHub">🐙</a>
+            <a href="mailto:fs2265548@icloud.com" title="Email">✉️</a>
+        </div>
+    </aside>
+    
+    <main class="main">
+        <h1>现在在做的事</h1>
+        <ul>
+            <li><span class="highlight">Farvis</span> — self-hosted personal agent 系统</li>
+            <li><span class="highlight">AI Infra 课程</span> — 12 章中文视频教程</li>
+            <li><span class="highlight">量化交易系统</span> — 选股 + 风控 + 自动化</li>
+            <li><span class="highlight">知识管理</span> — LLM 驱动的个人 wiki</li>
+        </ul>
+        
+        <h2>最新动态</h2>
+        <p>2026.10 — Personal Agent 密集发布，做了一期 <a href="#">Agent 大战解析</a></p>
+    </main>
+</body>
+</html>
